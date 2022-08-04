@@ -4,7 +4,7 @@
 
     <main>
         <h1 class="h1">Elija la operacion</h1>
-        <div class="contenedor grid">
+        <div class="contenedor grid-2">
             
             <a href="retiro.php" class="contenido enlace"> 
                 <img src="img/salida.svg" class="iconos" alt="">
@@ -32,5 +32,5 @@
         </div>
     </main>
 <?php
-    include 'includes/plantillas/header.php';
+    include 'includes/plantillas/footer.php';
 ?>
