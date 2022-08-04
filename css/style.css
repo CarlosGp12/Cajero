@@ -1,0 +1,159 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --fuentePrincipal: 3.8rem;
+    --grisclaro: #cfe2f5;
+}
+
+/*GLOBALES*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background: no-repeat;
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
+
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+p {
+    color: black;
+    font-size: 2rem;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+    margin: calc(5rem / 2) 0;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+/* Encabezado */
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 7rem;
+    background-color: #C0E9FF;
+    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* Index */
+.h1,
+.titulo {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.contenido {
+    background-image: #2eb1ee;
+    border-radius: 2rem;
+
+    border: 1px solid black;
+    /* display: grid;
+    place-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30rem;
+
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.enlace {
+    background-color: #bfdcf3;
+}
+
+.contenido:hover {
+    background-color: var(--secundario);
+    cursor: pointer;
+    /* height: 35rem; */
+}
+
+.iconos {
+    width: 10rem;
+    padding-bottom: 1rem;
+}
+
+footer {
+
+    margin-top: 7rem;
+    text-align: center;
+}
+
+/**/
+.box {
+    position: relative;
+    z-index: 0;
+    height: 10rem;
+    width: 50rem;
+}
+
+.box:before {
+    content: "140";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--primario);
+    clip-path: polygon(0 0, calc(100% - 100.00px) 0, calc(100% - 50px) 50px, 100% 100.00px, 100% calc(100% - 100.00px), calc(100% - 50px) calc(100% - 50px), calc(100% - 100.00px) 100%, 0 100%, 0 0, 10px 10px, 10px calc(100% - 10px), calc(100% - 100.00px - 4.14px) calc(100% - 10px), calc(100% - 50px - 7.07px) calc(100% - 50px - 7.07px), calc(100% - 10px) calc(100% - 100.00px - 4.14px), calc(100% - 10px) calc(100.00px + 4.14px), calc(100% - 50px - 7.07px) calc(50px + 7.07px), calc(100% - 100.00px - 4.14px) 10px, 10px 10px);
+}
