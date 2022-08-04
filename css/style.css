@@ -96,10 +96,15 @@ h4 {
     font-weight: 700;
 }
 
-.grid {
+.grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
 }
 
 .contenido {
@@ -122,11 +127,14 @@ h4 {
 
 .enlace {
     background-color: #bfdcf3;
+    color: var(--gris);
 }
 
-.contenido:hover {
+.contenido:hover,
+.enlace:hover {
     background-color: var(--secundario);
     cursor: pointer;
+    color: var(--primario);
     /* height: 35rem; */
 }
 
@@ -142,18 +150,71 @@ footer {
 }
 
 /**/
-.box {
+
+.valor{
+    font-size: 5rem;
+    margin-left: 11rem;
+    color: #212121;
+}
+
+.valores-left{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-start;
+}
+.valores-right{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.box,
+.box2 {
+    margin-top: 8rem;
     position: relative;
     z-index: 0;
     height: 10rem;
-    width: 50rem;
+    width: 31rem;
 }
 
-.box:before {
-    content: "140";
+.box:before,
+.box2:before{
+    content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: var(--primario);
-    clip-path: polygon(0 0, calc(100% - 100.00px) 0, calc(100% - 50px) 50px, 100% 100.00px, 100% calc(100% - 100.00px), calc(100% - 50px) calc(100% - 50px), calc(100% - 100.00px) 100%, 0 100%, 0 0, 10px 10px, 10px calc(100% - 10px), calc(100% - 100.00px - 4.14px) calc(100% - 10px), calc(100% - 50px - 7.07px) calc(100% - 50px - 7.07px), calc(100% - 10px) calc(100% - 100.00px - 4.14px), calc(100% - 10px) calc(100.00px + 4.14px), calc(100% - 50px - 7.07px) calc(50px + 7.07px), calc(100% - 100.00px - 4.14px) 10px, 10px 10px);
+    background: var(--secundario);
 }
+
+.pantalla-central{
+    grid-column: 2/3;
+    grid-row: 1/-4;
+    margin: 10rem;
+    padding-top: 10rem;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 10rem;
+    border: 2px solid  black;
+    background-color: antiquewhite;
+    
+}
+.texto{
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+}
+.pantalla{
+    font-size: 10rem;
+}
+
+.box:before {
+    
+    clip-path: polygon(0 0, calc(100% - 48.00px) 0, calc(100% - 24px) 24px, 100% 48.00px, 100% calc(100% - 48.00px), calc(100% - 24px) calc(100% - 24px), calc(100% - 48.00px) 100%, 0 100%, 0 0, 10px 10px, 10px calc(100% - 10px), calc(100% - 48.00px - 4.14px) calc(100% - 10px), calc(100% - 24px - 7.07px) calc(100% - 24px - 7.07px), calc(100% - 10px) calc(100% - 48.00px - 4.14px), calc(100% - 10px) calc(48.00px + 4.14px), calc(100% - 24px - 7.07px) calc(24px + 7.07px), calc(100% - 48.00px - 4.14px) 10px, 10px 10px);
+}
+
+
+.box2:before {
+    clip-path: polygon(0 48.00px, 24px 24px, 48.00px 0, 100% 0, 100% 100%, 48.00px 100%, 24px calc(100% - 24px), 0 calc(100% - 48.00px), 0 48.00px, 10px calc(48.00px + 4.14px), 10px calc(100% - 48.00px - 4.14px), calc(24px + 7.07px) calc(100% - 24px - 7.07px), calc(48.00px + 4.14px) calc(100% - 10px), calc(100% - 10px) calc(100% - 10px), calc(100% - 10px) 10px, calc(48.00px + 4.14px) 10px, calc(24px + 7.07px) calc(24px + 7.07px), 10px calc(48.00px + 4.14px));
+}
+
