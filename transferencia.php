@@ -4,19 +4,40 @@ include 'includes/plantillas/header.php';
 
 <body>
 
-    <label for=""> Cuenta 1</label>
-    <input type="text" name="cantidad1" id="cuenta1" value="1200">
-    <label for=""> Cuenta 2</label>
-    <input type="text" name="cantidad2" id="cuenta2" value="800">
+    <div class="contenedor grid-3-1 ">
 
-    <form >
+        <div class="contenedor-campos">
+            
+            <label class="labels" for=""> Cuenta 1</label>
+            <img class="img-transf" src="img/user1.svg" alt="">
+            <input class="campos" type="text" name="cantidad1" id="cuenta1" value="1200">
+        </div>
 
-        <label>Transferencia</label>
-        <input type="text" name="" id="cantidad" placeholder="Cantidad">
+        <div class="contendor-img-transf">
+            <img class="img-transf" src="img/transferencia.svg" alt="">
+        </div>
 
-        <input type="button" value="transferencia" id="transferencia" onclick="formula()">
+        <div class="contenedor-campos">
+            <label class="labels" for=""> Cuenta 2</label>
+            <img class="img-transf" src="img/user2.svg" alt="">
+            <input class="campos" type="text" name="cantidad2" id="cuenta2" value="800">
+        </div>
 
-    </form>
+        <div class=" contenedor-formulario">
+            <form>
+
+                <label class="labels">Transferencia</label>
+                <input class="campos" type="text" name="" id="cantidad" placeholder="Cantidad">
+                
+            </form>
+            
+        </div>
+        
+    </div>
+    <input class="boton" type="button" value="transferencia" id="transferencia" onclick="formula()">
+    <script src="js/transferencia.js">
+
+    </script>
 </body>
 
 <?php
