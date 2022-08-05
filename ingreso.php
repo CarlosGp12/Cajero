@@ -1,7 +1,7 @@
 <?php
     include 'includes/plantillas/header.php';
 ?>
-    <h1>Ingrese la cantidad de dinero a retirar</h1>
+    <h1>Ingrese la cantidad de dinero a ingresar</h1>
 
     <div class="contenedor grid-3">
         <div class="valores-left">

@@ -96,16 +96,19 @@ h4 {
     font-weight: 700;
 }
 
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
+
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     
 }
+
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 
 .contenido {
     background-image: #2eb1ee;
@@ -134,7 +137,7 @@ h4 {
 .enlace:hover {
     background-color: var(--secundario);
     cursor: pointer;
-    color: var(--primario);
+    color: var(--oscuro);
     /* height: 35rem; */
 }
 
@@ -218,3 +221,18 @@ footer {
     clip-path: polygon(0 48.00px, 24px 24px, 48.00px 0, 100% 0, 100% 100%, 48.00px 100%, 24px calc(100% - 24px), 0 calc(100% - 48.00px), 0 48.00px, 10px calc(48.00px + 4.14px), 10px calc(100% - 48.00px - 4.14px), calc(24px + 7.07px) calc(100% - 24px - 7.07px), calc(48.00px + 4.14px) calc(100% - 10px), calc(100% - 10px) calc(100% - 10px), calc(100% - 10px) 10px, calc(48.00px + 4.14px) 10px, calc(24px + 7.07px) calc(24px + 7.07px), 10px calc(48.00px + 4.14px));
 }
 
+.volver{
+    grid-column: 1/2;
+}
+.aceptar{
+    grid-column: 3/4;
+}
+
+.volver,
+.aceptar{
+    text-align: center;
+    color: azure;
+    font-size: 4rem;
+    background-color: var(--secundario);
+    border-radius: 4rem;
+}

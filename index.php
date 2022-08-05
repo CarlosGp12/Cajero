@@ -12,13 +12,13 @@
             </a>
         
             
-            <a href="#" class="contenido enlace">
+            <a href="transferencia.php" class="contenido enlace">
                 <img src="img/transferencia.svg" class="iconos" alt="">
                 Transferencia
             </a>
         
             
-            <a href="#" class="contenido enlace">
+            <a href="ingreso.php" class="contenido enlace">
                 <img src="img/entrada.svg" class="iconos" alt="">
                 Ingreso dinero
             </a>
