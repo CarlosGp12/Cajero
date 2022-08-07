@@ -1,4 +1,5 @@
 <?php
+
     $errores = [];
     //conexion
     require 'includes/config/database.php';
@@ -48,7 +49,8 @@
                     //El usuario esta autenticado
                     session_start();
                     //llenar el arreglo de la sesion
-                    $_SESSION['usuario'] = $usuario['num_tarjeta'];
+                    $_SESSION['usuario'] = $usuario['id'];
+                    $_SESSION['nombre'] = $usuario['usuario'];
                     $_SESSION['login'] = true;
                     header('Location: index.php');
                 } else {

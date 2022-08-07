@@ -357,3 +357,20 @@ footer {
  .exito{
     background-color: #71B100;
 }
+.pantalla-central-consulta{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    margin: 10rem;
+    padding-top: 10rem;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 10rem;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+.centro{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

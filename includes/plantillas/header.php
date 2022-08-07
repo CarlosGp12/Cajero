@@ -1,6 +1,9 @@
 <?php
-// $url ="http://".$_SERVER['HTTP_HOST']."/Cajero";
-require __DIR__.'/../app.php';
+if(!isset($_SESSION)){
+    session_start();
+}
+$auth = $_SESSION['login'] ?? false; // si no existe se pondra false
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,5 +24,8 @@ require __DIR__.'/../app.php';
             <img class="logo" src="img/logo.png" alt="">
             <h1 class="titulo">CAJERO AMIKO</h1>
         </a>
+        <?php if($auth):?>
+            <a href="cerrar-sesion.php">Cerrar Sesion</a>
+        <?php endif;?>
 
     </header>

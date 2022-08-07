@@ -1,13 +1,13 @@
 <?php
     include 'includes/plantillas/header.php';
     require 'includes/funciones.php';
-
-    $auth = estaAutenticado();
-
+    if(!isset($_SESSION)){
+        $auth = estaAutenticado() ?? false;
+    }
+    
     if (!$auth) {
         header('Location: login.php');
     }
-
 ?>
 
     <main>
