@@ -1,5 +1,13 @@
 <?php
     include 'includes/plantillas/header.php';
+    require 'includes/funciones.php';
+
+    $auth = estaAutenticado();
+
+    if (!$auth) {
+        header('Location: login.php');
+    }
+
 ?>
 
     <main>
@@ -24,7 +32,7 @@
             </a>
         
 
-            <a href="#" class="contenido enlace">
+            <a href="consultar.php" class="contenido enlace">
                 <img src="img/lista.svg" class="iconos" alt="">
                 Consulta de datos
             </a>

@@ -79,6 +79,14 @@ h4 {
 }
 
 /* Encabezado */
+.nav{
+    display: flex;
+}
+
+.logo{
+    width: 10rem;
+    margin-right: 2rem;
+}
 
 .header {
     display: flex;
@@ -94,6 +102,12 @@ h4 {
 .titulo {
     font-size: 4rem;
     font-weight: 700;
+    color: #212121;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
 }
 
 .centrado-grid {
@@ -132,9 +146,22 @@ h4 {
 }
 
 .labels{
-    font-size: 5rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
+} 
+
+.selectores{
+    height: 5rem;
+    width: 70%;
+    /* padding: 1rem; */
+    padding-left: 6rem ;
+    border-radius: 2rem;
+}
+option,
+.selectores{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .boton{
@@ -296,13 +323,37 @@ footer {
 
 .aceptar {
     grid-column: 3/4;
+} 
+
+.otro{
+    margin: 0 4rem;
 }
 
 .volver,
-.aceptar {
+.aceptar,
+.otro {
     text-align: center;
     color: azure;
     font-size: 4rem;
     background-color: var(--secundario);
     border-radius: 4rem;
+}
+/*login*/
+.labels-login{
+    font-size: 2rem;
+}
+.alerta{
+    height: 4rem;
+    padding: .5rem;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.error{
+    background-color: rgb(189, 7, 7);
+}
+
+ .exito{
+    background-color: #71B100;
 }

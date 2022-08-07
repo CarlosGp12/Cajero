@@ -1,4 +1,18 @@
 <?php
+    // //conexion
+    // require 'includes/config/database.php';
+    // $db = conectarDB();
+    // //consultar
+    // $query = "SELECT * FROM usuarios";
+    // //obtener resultado
+    // $resultado = mysqli_query($db, $query);
+    // // while ($usuarios = mysqli_fetch_assoc($resultado)){
+    // //     echo "<pre>";
+    // //     var_dump($usuarios);
+    // //     echo "</pre>";
+    // // }
+
+    //incluir encabezado
     include 'includes/plantillas/header.php';
 ?>
     <h1>Ingrese la cantidad de dinero a ingresar</h1>
@@ -43,6 +57,7 @@
         </div>
         
         <a href="index.php" class="volver">Volver</a>
+        <a href="index.php" class="otro">otro valor</a>
         <a href="" class="aceptar">Aceptar</a>
     </div>
 <?php

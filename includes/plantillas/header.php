@@ -17,7 +17,8 @@ require __DIR__.'/../app.php';
 <body>
     <header class="header">
 
-        <a href="index.php">
+        <a class="nav"  href="index.php">
+            <img class="logo" src="img/logo.png" alt="">
             <h1 class="titulo">CAJERO AMIKO</h1>
         </a>
 
