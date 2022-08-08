@@ -14,7 +14,7 @@
         <h1 class="h1">Elija la operacion</h1>
         <div class="contenedor grid-2">
             
-            <a href="retiro.php" class="contenido enlace"> 
+            <a href="retiro.php" class="contenido enlace retiro"> 
                 <img src="img/salida.svg" class="iconos" alt="">
                 Retirar dinero
             </a>
@@ -25,11 +25,6 @@
                 Transferencia
             </a>
         
-            
-            <a href="ingreso.php" class="contenido enlace">
-                <img src="img/entrada.svg" class="iconos" alt="">
-                Ingreso dinero
-            </a>
         
 
             <a href="consultar.php" class="contenido enlace">

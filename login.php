@@ -51,6 +51,7 @@
                     //llenar el arreglo de la sesion
                     $_SESSION['usuario'] = $usuario['id'];
                     $_SESSION['nombre'] = $usuario['usuario'];
+                    $_SESSION['nun_tarjet'] = $usuario['num_tarjeta'];
                     $_SESSION['login'] = true;
                     header('Location: index.php');
                 } else {
