@@ -34,17 +34,9 @@
     
             $query = "SELECT * FROM usuarios WHERE num_tarjeta = '$num_tarjeta'";
             $resultado = mysqli_query($db, $query);
-            // var_dump($resultado);
-            //si vemos el resultado con un var_dump habra una objeto llamado num_rows si ese objeto tiene valor 0 es porque no encontro coincidencia pero si trae otro numero es porque si encontro coincidencia
-    
             if ($resultado->num_rows) {
                 //resultado si el password es correcto 
                 $usuario = mysqli_fetch_assoc($resultado);
-                // var_dump($usuario['password']);
-                //verificar si el password es correcto o no
-
-                // $auth = password_verify($clave, $usuario['clave']);
-                //parametro 1 el password que ingreso el usuario, segundo parametro el usuario que esta en la base de datos hasheado, esta funcion devolvera un true o false
                 if ($usuario['clave']== $clave) {
                     //El usuario esta autenticado
                     session_start();

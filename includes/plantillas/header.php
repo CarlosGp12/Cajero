@@ -25,7 +25,7 @@ $auth = $_SESSION['login'] ?? false; // si no existe se pondra false
             <h1 class="titulo">CAJERO AMIKO</h1>
         </a>
         <?php if($auth):?>
-            <a href="cerrar-sesion.php">Cerrar Sesion</a>
+            <a class="cerrar" href="cerrar-sesion.php">Cerrar Sesion</a>
         <?php endif;?>
 
     </header>

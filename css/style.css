@@ -90,13 +90,23 @@ h4 {
 
 .header {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 7rem;
+    justify-content: space-between;
+    padding: 0 12rem;
     background-color: #C0E9FF;
     margin-bottom: 2rem;
     margin-bottom: 5rem;
 }
 
+.cerrar{
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.cerrar:hover{
+    color: rgb(28, 115, 142);
+}
 /* Index */
 .h1,
 .titulo {
@@ -377,4 +387,23 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.propiedades{
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+}
+thead{
+    background-color: #1e4961;
+    
+}
+th{
+    color: #ffffff;
+    padding: 2rem;
+
+}
+td{
+    padding: 2rem 0;
+    font-size: 2rem;
+    text-align: center;
 }
