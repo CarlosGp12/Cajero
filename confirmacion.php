@@ -15,12 +15,6 @@ $resultadoget = $_GET['resultado'];
 $usuarioId = $_SESSION['usuario'];
 $tipoCuenta = $_SESSION['tipoCuenta'];
 
-echo "<pre>";
-var_dump($_GET);
-echo "</pre>";
-echo "<pre>";
-var_dump($_SESSION);
-echo "</pre>";
 //consultar
 $query = "UPDATE saldo SET saldo = saldo-$resultadoget WHERE (cuentaId = $tipoCuenta AND usuarioId = $usuarioId)";
 //obtener resultado
