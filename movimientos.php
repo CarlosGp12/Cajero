@@ -1,4 +1,12 @@
 <?php
+    require 'includes/funciones.php';
+    if (!isset($_SESSION)) {
+        $auth = estaAutenticado() ?? false;
+    }
+    
+    if (!$auth) {
+        header('Location: login.php');
+    }
     //conexion
     require 'includes/config/database.php';
     $db = conectarDB();
@@ -15,7 +23,7 @@
     //incluir encabezado
     include 'includes/plantillas/header.php';
 ?>
-    <h1>Su saldo es:</h1>
+    <h1>Transferencias realizadas:</h1>
     <div class="contenedor">
     <table class="propiedades">
             <thead>
@@ -33,7 +41,7 @@
                         <td><?php echo $movimiento['id'] ?></td>
                         <td><?php echo $movimiento['num_origen'] ?></td>
                         <td><?php echo $movimiento['num_destino'] ?></td>
-                        <td><?php echo $movimiento['cantidad'] ?></td>
+                        <td>$<?php echo $movimiento['cantidad'] ?></td>
                         <td><?php echo $movimiento['fecha'] ?></td>
                     </tr>
                 <?php endwhile; ?>

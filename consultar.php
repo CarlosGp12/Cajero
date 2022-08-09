@@ -54,9 +54,9 @@
                 </select>
                 <input value="Solicitar" type="submit" class="boton">
             </form>
-            <div class="pantalla-central-consulta">
+            <div class="pantalla pantalla-central-consulta">
                 <label class="texto" for="">Valor ingresado</label>
-                <h3 class="pantalla">$<?php echo $usuario["saldo"] ?? null ?></h3>
+                <h3 class="pantalla-text">$<?php echo $usuario["saldo"] ?? null ?></h3>
             </div>
             
             <a href="index.php" class="volver">Volver</a>

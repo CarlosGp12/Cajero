@@ -1,7 +1,8 @@
 <?php
 include 'includes/plantillas/header.php';
-require 'includes/funciones.php';
 require 'includes/config/database.php';
+require 'includes/funciones.php';
+
 if (!isset($_SESSION)) {
     $auth = estaAutenticado() ?? false;
 }
