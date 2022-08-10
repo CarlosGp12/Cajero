@@ -6,6 +6,7 @@
     --gris: #757575;
     --fuentePrincipal: 3.8rem;
     --grisclaro: #cfe2f5;
+    --moradoclaro: #7a9dff;
 }
 
 /*GLOBALES*/
@@ -142,13 +143,13 @@ h4 {
 }
 
 .select{
-    background-color: var(--primario);
+    background-color: var(--gris);
     padding: 1rem;
     text-align: center;
     color: azure;
     font-size: 4rem;
     border-radius: 4rem;
-    color: black;
+    /* color: black; */
     
 }
 
@@ -206,7 +207,7 @@ option,
 }
 
 .boton{
-    
+    color: black;
     background-color: rgb(195, 218, 238);
     border-radius: 1rem;
     /* border: none; */
