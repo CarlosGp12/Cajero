@@ -27,7 +27,7 @@ include 'includes/plantillas/header.php';
 <div class="contenedor">
     <table class="propiedades">
         <div class="flex-justify">
-            <a href="movimientos.php" class="volver select">Transferencias</a>
+            <a href="movimientos.php" class=" select">Transferencias</a>
             <a href="Retiros.php" class="volver">Retiros</a>
         </div>
         <thead>

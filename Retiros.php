@@ -20,7 +20,7 @@
     <table class="propiedades">
         <div class="flex-justify">
             <a href="movimientos.php" class="volver">Transferencias</a>
-            <a href="Retiros.php" class="select volver">Retiros</a>
+            <a href="Retiros.php" class="select">Retiros</a>
         </div>
         <thead>
             <tr>

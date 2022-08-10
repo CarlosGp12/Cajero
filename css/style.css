@@ -143,6 +143,13 @@ h4 {
 
 .select{
     background-color: var(--primario);
+    padding: 1rem;
+    text-align: center;
+    color: azure;
+    font-size: 4rem;
+    border-radius: 4rem;
+    color: black;
+    
 }
 
 .centrado-grid {
