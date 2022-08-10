@@ -130,6 +130,21 @@ h4 {
     justify-content: center;
 }
 
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.flex-justify{
+    display: flex;
+    justify-content: space-between;
+}
+
+.select{
+    background-color: var(--primario);
+}
+
 .centrado-grid {
     display: grid;
     place-content: center;
@@ -138,7 +153,6 @@ h4 {
 .grid-3 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-
 }
 .grid-3-1 {
     display: grid;
@@ -186,7 +200,7 @@ option,
 
 .boton{
     
-    background-color: aliceblue;
+    background-color: rgb(195, 218, 238);
     border-radius: 1rem;
     /* border: none; */
     font-size: 4rem;
@@ -341,6 +355,7 @@ footer {
 .volver,
 .aceptar,
 .otro {
+    padding: 1rem;
     text-align: center;
     color: azure;
     font-size: 4rem;
@@ -373,6 +388,7 @@ footer {
 .pantalla-central {
     grid-column: 2/3;
     grid-row: 1/-4;
+    
 }
 
 .pantalla-text{
